@@ -1,0 +1,31 @@
+Laravel Payment system using stripe
+
+1.composer require stripe/stripe-app
+2.Create a stripe account
+3.Changes in the .env
+4.Make Route
+5.Make a view for payment
+6.Write code for payment in the Controller
+
+
+PDF Download IN Laravel
+1. composer require barryvdh/laravel-dompdf
+
+laravel(11 not need)
+{2. GO to config/app.php
+'providers' => [
+    Barryvdh\DomPDF\ServiceProvider::class,
+],
+
+'aliases' => [
+    'PDF' => Barryvdh\DomPDF\Facade::class,
+]}
+
+SweetAlert
+1.composer require realrashid/sweet-alert
+2.php artisan sweetalert:publish
+3.Add this to the view where you want to show the message
+        @include('sweetalert::alert')
+4.Got to the Controller and add this at the top
+    use RealRashid\SweetAlert\Facades\Alert;
+5.Send the alert message from the controller function and we are DONE.
